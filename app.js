@@ -79,15 +79,47 @@ console.log(clonedCars);
 // const selectedFruit = 'apples'; 
 // const selectedFruitCount = fruitInventory[selectedFruit];
 // console.log(selectedFruitCount);
-// 
-// working on exesize 6
-const fruitsIn = {
-    apples: 2,
-    banana: 3,
-    carot: 4,
+
+const propertyName = 'username';
+const userProfile = {
+  [propertyName]: 'john_doe'
+};
+
+console.log(userProfile.username);        
+console.log(userProfile[propertyName]);
+console.log(space);
+console.log("Ans8:")
+function sentence(noun = 'cat', adjective = 'white') {
+  console.log(`The ${noun} is ${adjective}.`);
 }
-const selectedFruit = 'apples'
-const selectedFruitCount = fruitsIn[selectedFruit];
-console.log(selectedFruitCount)
+
+sentence();                 
+sentence('bear');            
+sentence('horse', 'big');  
+console.log(space)
+console.log("Ans9:")
+const pizza = 'tasty';
+console.log(pizza === 'tasty' ? 'yum' : 'yuck');
+
+console.log(space)
+console.log('Ans10:')
+// 1
+const localLangConfig = null;
+const LANG = localLangConfig || 'en';
+console.log('Language setting:', LANG);
+// 2
+const userSavedTheme = null;
+const USER_THEME = userSavedTheme || 'light';
+console.log('User theme setting:', USER_THEME);
+
+console.log(space);
+console.log("Ans11")
+
+const adventurer = {
+  name: 'Alice',
+};
+
+let catAge = adventurer.cat?.age;
+
 
 
