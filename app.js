@@ -119,7 +119,8 @@ const adventurer = {
   name: 'Alice',
 };
 
-let catAge = adventurer.cat?.age;
+let cat = adventurer.cat?.age;
+console.log(cat)
 
 
 
